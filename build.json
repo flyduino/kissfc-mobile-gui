@@ -1,0 +1,18 @@
+{
+		"android": {
+			"debug": {
+					"keystore": "~/keystores/kissfc-android-gui.keystore",
+					"storePassword": "123456",
+					"alias": "SimpleGUI",
+					"password" : "123456",
+					"keystoreType": "jks"
+			},
+			"release": {
+					"keystore": "~/keystores/kissfc-android-gui.keystore",
+					"storePassword": "123456",
+					"alias": "SimpleGUI",
+					"password" : "123456",
+					"keystoreType": "jks"
+			}
+	}
+}
