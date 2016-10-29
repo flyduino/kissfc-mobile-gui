@@ -7,7 +7,7 @@
     <author email="fedor@anuta.org" href="http://www.flyduino.net">
         Alexander Fedorov
     </author>
-    <content src="index.html" />
+    <content src="main.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
