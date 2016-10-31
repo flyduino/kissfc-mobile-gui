@@ -87,14 +87,7 @@ var androidOTGSerial = {
                         // connection opened, but this connect sequence was canceled
                         // we will disconnect without triggering any callbacks
                         console.log('SERIAL: Connection opened with ID: ' + connectionInfo.connectionId + ', but request was canceled, disconnecting');
-
-                        // some bluetooth dongles/dongle drivers really doesn't like to be closed instantly, adding a small delay
-                        //setTimeout(function initialization() {
-                        //chrome.serial.disconnect(connectionInfo.connectionId, function (result) {
-                        // TODO maybe we should do something?
-                        //  });
-                        //}, 150);
-                    }
+                  }
                 }, function error(message) {
                     console.log("Error: " + message);
                     if (request.canceled) {
