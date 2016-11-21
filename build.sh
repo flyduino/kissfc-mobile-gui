@@ -21,4 +21,6 @@ cordova plugin add cordova-plugin-crosswalk-webview
 cordova plugin add https://github.com/xseignard/cordovarduino.git
 cordova prepare
 cordova build android --release
+cordova build ios --device
 cp ./platforms/android/build/outputs/apk/android-armv7-release.apk bin/Kiss-GUI-${VERSION}-android.apk
+cp ./platforms/ios/build/device/KISS\ GUI.ipa bin/Kiss-GUI-${VERSION}-ios.ipa

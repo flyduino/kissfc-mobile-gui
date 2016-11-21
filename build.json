@@ -1,5 +1,5 @@
 {
-		"android": {
+	"android": {
 			"debug": {
 					"keystore": "~/keystores/kissfc-android-gui.keystore",
 					"storePassword": "123456",
@@ -14,5 +14,20 @@
 					"password" : "123456",
 					"keystoreType": "jks"
 			}
-	}
+	},
+
+	"ios": {
+                "debug":{
+                        "codeSignIdentitiy":"iPhone Developer",
+                        "provisioningProfile":"16e1bc09-e3d9-4d19-8127-b4b4e93f9256",
+                        "developmentTeam": "UQLR8U8J7T",
+                        "packageType": "development"
+                },
+                "release":{
+                        "codeSignIdentitiy":"iPhone Distribution",
+                        "provisioningProfile":"16e1bc09-e3d9-4d19-8127-b4b4e93f9256",
+                        "developmentTeam": "UQLR8U8J7T",
+                        "packageType": "app-store"
+                }
+        }
 }
