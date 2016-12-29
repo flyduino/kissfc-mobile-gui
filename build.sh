@@ -19,6 +19,7 @@ cordova platform add android
 cordova platform add browser
 cordova plugin add cordova-plugin-crosswalk-webview
 cordova plugin add https://github.com/xseignard/cordovarduino.git
+cordova plugin add cordova-plugin-splashscreen
 cordova prepare
 cordova build android --release
 cordova build ios --device
