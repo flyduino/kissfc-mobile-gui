@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.14"
+VERSION="1.15"
 if [ -d ./node_modules ] ; then
     rm -rf ./node_modules
 fi
@@ -23,6 +23,6 @@ cordova plugin add cordova-plugin-splashscreen
 cordova plugin add https://github.com/katzer/cordova-plugin-hidden-statusbar-overlay
 cordova prepare
 cordova build android --release
-cordova build ios --device
+cordova build ios --device --release
 cp ./platforms/android/build/outputs/apk/android-armv7-release.apk bin/Kiss-GUI-${VERSION}-android.apk
 cp ./platforms/ios/build/device/KISS\ GUI.ipa bin/Kiss-GUI-${VERSION}-ios.ipa
