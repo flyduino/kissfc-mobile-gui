@@ -31,6 +31,7 @@ try {
   fs.copySync(webappSrc + '/images', 'www/images');
   fs.copySync(webappSrc + '/content', 'www/content');
   fs.copySync(webappSrc + '/js', 'www/js');
+  fs.copySync(webappSrc + '/i18n', 'www/i18n');
 //  fs.copySync('res', 'www/res');
 
   //fs.copySync('merges/device.js', 'www/device.js');

@@ -7,6 +7,7 @@ var app = {
     },
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        changeLanguage();
     },
     receivedEvent: function(id) {
         console.log('Received Event: ' + id);

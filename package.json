@@ -1,7 +1,7 @@
 {
   "name": "kissfc-mobile-gui",
   "private": true,
-  "version": "1.15.0",
+  "version": "1.15.4",
   "description": "KISSFC MOBILE GUI",
   "dependencies": {
     "fs-extra": "^0.30.0"

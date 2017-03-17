@@ -10,6 +10,7 @@ var app = {
     },
     onDeviceReady: function() {
         console.log("On device ready");
+        changeLanguage();
         app.receivedEvent('deviceready');
     },
     receivedEvent: function(id) {
