@@ -9,19 +9,19 @@ CONTENT.welcome.initialize = function (callback) {
         GUI.activeContent = 'welcome';
     }
 
-    $('#content').load("./content/welcome.html", htmlLoaded);
+    GUI.load("./content/welcome.html", htmlLoaded);
     
 
     function htmlLoaded() {
-	$('a[data-lang="'+$.i18n.locale+'"]').addClass('selected-language');
+        $("#language").val($.i18n.locale);
         
-        $(".language").on("click", function() {
-           var lang = $(this).data("lang");
+        $("#language").on("change", function() {
+                          
+           var lang = $(this).val();
+                          console.log("Change " + lang);
            $.i18n.locale = lang;
            setLanguage(lang);
            changeLanguage();
-           $('a[data-lang]').removeClass('selected-language');
-           $('a[data-lang="'+$.i18n.locale+'"]').addClass('selected-language');
         });
     }
 };
