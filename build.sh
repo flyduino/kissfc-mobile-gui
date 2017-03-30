@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.15.4"
+VERSION="1.15.7"
 if [ -d ./node_modules ] ; then
     rm -rf ./node_modules
 fi
