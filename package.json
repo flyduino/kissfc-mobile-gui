@@ -1,9 +1,38 @@
 {
-  "name": "kissfc-mobile-gui",
-  "private": true,
-  "version": "1.15.7",
-  "description": "KISSFC MOBILE GUI",
-  "dependencies": {
-    "fs-extra": "^0.30.0"
-  }
+    "name": "kissfc-mobile-gui",
+    "private": true,
+    "version": "1.15.7",
+    "description": "KISSFC MOBILE GUI",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-crosswalk-webview": "^2.3.0",
+        "cordova-plugin-hidden-statusbar-overlay": "git+https://github.com/katzer/cordova-plugin-hidden-statusbar-overlay.git",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordovarduino": "git+https://github.com/xseignard/cordovarduino.git",
+        "fr.drangies.cordova.serial": "https://github.com/xseignard/cordovarduino.git",
+        "fs-extra": "^0.30.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "23+",
+                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+                "XWALK_MODE": "embedded",
+                "XWALK_MULTIPLEAPK": "true"
+            },
+            "fr.drangies.cordova.serial": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-hidden-statusbar-overlay": {}
+        },
+        "platforms": [
+            "android",
+            "browser",
+            "ios"
+        ]
+    }
 }
