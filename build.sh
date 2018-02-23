@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.16.7"
+VERSION="2.0.2"
 if [ -d ./node_modules ] ; then
     rm -rf ./node_modules
 fi
@@ -14,15 +14,16 @@ if [ ! -d ./bin ] ; then
     mkdir bin
 fi
 npm install
-cordova platform add ios
+#cordova platform remove ios
+#cordova platform remove android
+#cordova platform add ios
 cordova platform add android
-cordova platform add browser
 cordova plugin add cordova-plugin-crosswalk-webview
 cordova plugin add https://github.com/xseignard/cordovarduino.git
 cordova plugin add cordova-plugin-splashscreen
 cordova plugin add https://github.com/katzer/cordova-plugin-hidden-statusbar-overlay
 cordova prepare
 cordova build android --release
-cordova build ios --device --release
+#cordova build ios --device --release
 cp ./platforms/android/build/outputs/apk/android-armv7-release.apk bin/Kiss-GUI-${VERSION}-android.apk
-cp ./platforms/ios/build/device/KISS\ GUI.ipa bin/Kiss-GUI-${VERSION}-ios.ipa
+#cp ./platforms/ios/build/device/KISS\ GUI.ipa bin/Kiss-GUI-${VERSION}-ios.ipa
